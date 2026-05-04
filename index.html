@@ -4,392 +4,1008 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyFirst WebSite</title>
-    <link rel="stylesheet" href="./css/stylesNew.css" />
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <link
+      href="./fonts/inter-v20-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      href="./fonts/inter-v20-latin-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      href="./fonts/inter-v20-latin-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      href="./fonts/inter-v20-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <link
+      as="image"
+      href="/image/hero-imagee.webp"
+      imagesrcset="/image/hero-imagee.webp 1x, /image/hero-imagee@2x.webp 2x"
+      fetchpriority="high"
     />
   </head>
+
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav class="menu-nav">
-          <a class="color-logoHeader" href="./index.html">Panto</a>
-          <ul class="menu-link">
-            <li><a class="link" href="#Shop">Shop</a></li>
-            <li><a class="link" href="#About-Us">About Us</a></li>
-            <li><a class="link" href="#Contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="header__container">
+          <a class="header__logo" href="./index.html">Panto</a>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li><a class="link" href="#Shop">Shop</a></li>
+              <li><a class="link" href="#serious">About Us</a></li>
+              <li><a class="link" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="header__burger menu-btn-open" type="button" aria-label="open menu">
+            <svg width="24" height="24">
+              <use href="./image/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu" aria-hidden="true">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button" aria-label="close menu">
+              <svg width="15" height="15">
+                <use href="./image/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="mobile-menu__nav">
+              <a class="header__logo" href="./index.html">Panto</a>
+              <ul class="mobile-menu__menu">
+                <li>
+                  <a class="mobile-menu__link" href="#">Shop</a>
+                </li>
+                <li>
+                  <a class="mobile-menu__link" href="#">About Us</a>
+                </li>
+                <li>
+                  <a class="mobile-menu__link" href="https://frankof.com.ua/">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">
+          <h1 class="hero-section__title">
             Make your interior more minimalistic & modern
           </h1>
-          <p class="hero-text">
+          <p class="hero-section__text">
             Turn your room with panto into a lot more minimalist and modern with
             ease and speed
           </p>
         </div>
       </section>
 
-      <section class="Section">
+      <section class="section advantages-section">
         <div class="container">
-          <div class="advantages-flex">
-            <h2 class="title-one advanteges-title nazar">
-              Why<br />
-              Choosing Us
+          <div class="advantages-section__container">
+            <h2 class="section__title advantages-section__title">
+              Why Choosing Us
             </h2>
-            <div class="two-flex">
+            <div class="advantages-section__box">
               <div>
-                <h3 class="title-two">Luxury facilities</h3>
-                <p class="advanteges-text">
+                <h3 class="advantages-section__title-two">Luxury facilities</h3>
+                <p class="advantages-section__text">
                   The advantage of hiring a workspace with us is that givees you
                   comfortable service and all-around facilities.
                 </p>
+                <a class="more-info" href="https://frankof.com.ua/"
+                  >More Info
+                  <svg width="38" height="12" fill="#E58411">
+                    <use href="./image/icons.svg#icon-Vector"></use>
+                  </svg>
+                </a>
               </div>
 
               <div>
-                <h3 class="title-two">Affordable Price</h3>
-                <p class="advanteges-text">
+                <h3 class="advantages-section__title-two">Affordable Price</h3>
+                <p class="advantages-section__text">
                   You can get a workspace of the highst quality at an affordable
                   price and still enjoy the facilities that are oly here.
                 </p>
+                <a class="more-info" href="https://frankof.com.ua/"
+                  >More Info
+                  <svg width="38" height="12" fill="#E58411">
+                    <use href="./image/icons.svg#icon-Vector"></use>
+                  </svg>
+                </a>
               </div>
               <div>
-                <h3 class="title-two">Many Choices</h3>
-                <p class="advanteges-text">
+                <h3 class="advantages-section__title-two">Many Choices</h3>
+                <p class="advantages-section__text">
                   We provide many unique work space choices so that you can
                   choose the workspace to your liking.
                 </p>
+                <a class="more-info" href="https://frankof.com.ua/"
+                  >More Info
+                  <svg width="38" height="12" fill="#E58411">
+                    <use href="./image/icons.svg#icon-Vector"></use>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="Section shop-section" id="Shop">
+      <section class="section shop-section" id="Shop">
         <div class="container">
-          <h2 class="title-one Shop-title">Best Selling Product</h2>
-          <button class="button-carousel" type="button">
-            <svg class="icon-carousel" width="17.21" height="17.74">
-              <use href="./image/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
-          <ul class="shop-flex">
-            <li class="items-shop">
-              <article class="shop-card">
-                <div class="box-one">
-                  <img
-                    class="image"
-                    src="./image/first-chair.png"
-                    alt="Chair Sakarias Armchair"
-                  />
-                  <p class="text-cards">Chair</p>
-                  <h3 class="title-cards">Sakarias Armchair</h3>
-                  <p class="price-cards">392 &#36;</p>
-                </div>
-              </article>
-            </li>
-            <li class="items-shop">
-              <article class="shop-card">
-                <div class="box-one">
-                  <img
-                    class="image"
-                    src="./image/second-chair.png"
-                    alt="Chair Baltsar"
-                  />
-                  <p class="text-cards">Chair</p>
-                  <h3 class="title-cards">Baltsar Chair</h3>
-                  <p class="price-cards">299 &#36;</p>
-                </div>
-              </article>
-            </li>
-            <li class="items-shop">
-              <article class="shop-card">
-                <div class="box-one">
-                  <img
-                    class="image chang-size"
-                    src="./image/third-chair.png"
-                    alt="Anjay Chair"
-                  />
-                  <p class="text-cards">Chair</p>
-                  <h3 class="title-cards">Anjay Chair</h3>
-                  <p class="price-cards">519 &#36;</p>
-                </div>
-              </article>
-            </li>
-            <li class="items-shop">
-              <article class="shop-card">
-                <div class="box-one">
-                  <img
-                    class="image chang-size"
-                    src="./image/fourth-chair.png"
-                    alt="Nyantuy Chair"
-                  />
-                  <p class="text-cards">Chair</p>
-                  <h3 class="title-cards">Nyantuy Chair</h3>
-                  <p class="price-cards">921 &#36;</p>
-                </div>
-              </article>
-            </li>
-          </ul>
-          <button class="button-carousel" type="button">
-            <svg class="icon-carousel" width="17.21" height="17.74">
-              <use href="./image/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
+          <h2
+            class="section__title shop-section__title section__title--centered"
+          >
+            Best Selling Product
+          </h2>
+          <div class="shop-section__slider">
+            <button
+              class="button-carousel button-shop-carousel prev"
+              type="button"
+              aria-label="Попередній слайд"
+            >
+              <svg aria-hidden="true" class="button-carousel__icon" width="17.21" height="17.74">
+                <use href="./image/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="shop-section__container swiper-shop-container">
+              <ul class="shop-section__list swiper-wrapper">
+                <li class="shop-section__item swiper-slide">
+                  <article class="shop-card">
+                    <img
+                      class="shop-card__image"
+                      loading="lazy"
+                      srcset="
+                        ./image/first-chair.webp    1x,
+                        ./image/first-chair@2x.webp 2x
+                      "
+                      src="./image/first-chair.webp"
+                      alt="Chair Sakarias Armchair"
+                    />
+                    <a href="https://frankof.com.ua/">
+                      <div class="shop-card__box">
+                        <p class="shop-card__text-cards">Chair</p>
+                        <h3 class="shop-card__title-cards">Sakarias Armchair</h3>
+                        <svg
+                          class="shop-card__stars"
+                          width="102"
+                          height="18"
+                          fill="#F6B76F"
+                        >
+                          <use href="./image/icons.svg#icon-stars"></use>
+                        </svg>
+                        <div class="shop-card__price-box">
+                          <span class="shop-card__price-cards">392 &#36;</span>
+                          <a
+                            class="btn-add"
+                            style="height: 48px; width: 48px"
+                            href="https://frankof.com.ua/"
+                          >
+                            <svg width="18" height="18" fill="#FFFFFF">
+                              <use href="./image/icons.svg#icon-add-prod"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </li>
+                <li class="shop-section__item swiper-slide">
+                  <article class="shop-card">
+                    <img
+                      class="shop-card__image"
+                      loading="lazy"
+                      srcset="
+                        ./image/second-chair.webp    1x,
+                        ./image/second-chair@2x.webp 2x
+                      "
+                      src="./image/second-chair.webp"
+                      alt="Chair Baltsar"
+                    />
+                    <a href="https://frankof.com.ua/">
+                      <div class="shop-card__box">
+                        <p class="shop-card__text-cards">Chair</p>
+                        <h3 class="shop-card__title-cards">Baltsar Chair</h3>
+                        <svg
+                          class="shop-card__stars"
+                          width="102"
+                          height="18"
+                          fill="#F6B76F"
+                        >
+                          <use href="./image/icons.svg#icon-stars"></use>
+                        </svg>
+                        <div class="shop-card__price-box">
+                          <span class="shop-card__price-cards">299 &#36;</span>
+                          <a
+                            class="btn-add"
+                            style="height: 48px; width: 48px"
+                            href="https://frankof.com.ua/"
+                          >
+                            <svg width="18" height="18" fill="#FFFFFF">
+                              <use href="./image/icons.svg#icon-add-prod"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </li>
+                <li class="shop-section__item swiper-slide">
+                  <article class="shop-card">
+                    <img
+                      class="shop-card__image"
+                      srcset="
+                        ./image/third-chair.webp    1x,
+                        ./image/third-chair@2x.webp 2x
+                      "
+                      src="./image/third-chair.webp"
+                      alt="Anjay Chair"
+                    />
+                    <a href="https://frankof.com.ua/">
+                      <div class="shop-card__box">
+                        <p class="shop-card__text-cards">Chair</p>
+                        <h3 class="shop-card__title-cards">Anjay Chair</h3>
+                        <svg
+                          class="shop-card__stars"
+                          width="102"
+                          height="18"
+                          fill="#F6B76F"
+                        >
+                          <use href="./image/icons.svg#icon-stars"></use>
+                        </svg>
+                        <div class="shop-card__price-box">
+                          <span class="shop-card__price-cards">519 &#36;</span>
+                          <a
+                            class="btn-add"
+                            style="height: 48px; width: 48px"
+                            href="https://frankof.com.ua/"
+                          >
+                            <svg width="18" height="18" fill="#FFFFFF">
+                              <use href="./image/icons.svg#icon-add-prod"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </li>
+                <li class="shop-section__item swiper-slide">
+                  <article class="shop-card">
+                    <img
+                      class="shop-card__image"
+                      loading="lazy"
+                      srcset="
+                        ./image/fourth-chair.webp    1x,
+                        ./image/fourth-chair@2x.webp 2x
+                      "
+                      src="./image/fourth-chair.webp"
+                      alt="Nyantuy Chair"
+                    />
+                    <a href="https://frankof.com.ua/">
+                      <div class="shop-card__box">
+                        <p class="shop-card__text-cards">Chair</p>
+                        <h3 class="shop-card__title-cards">Nyantuy Chair</h3>
+                        <svg
+                          class="shop-card__stars"
+                          width="102"
+                          height="18"
+                          fill="#F6B76F"
+                        >
+                          <use href="./image/icons.svg#icon-stars"></use>
+                        </svg>
+                        <div class="shop-card__price-box">
+                          <span class="shop-card__price-cards">921 &#36;</span>
+                          <a
+                            class="btn-add"
+                            style="height: 48px; width: 48px"
+                            href="https://frankof.com.ua/"
+                          >
+                            <svg width="18" height="18" fill="#FFFFFF">
+                              <use href="./image/icons.svg#icon-add-prod"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </li>
+
+                <li class="shop-section__item swiper-slide">
+                  <article class="shop-card">
+                    <img
+                      class="shop-card__image"
+                      loading="lazy"
+                      srcset="
+                        ./image/first-chair.webp    1x,
+                        ./image/first-chair@2x.webp 2x
+                      "
+                      src="./image/first-chair.webp"
+                      alt="Chair Sakarias Armchair"
+                    />
+                    <a href="https://frankof.com.ua/">
+                      <div class="shop-card__box">
+                        <p class="shop-card__text-cards">Chair</p>
+                        <h3 class="shop-card__title-cards">Sakarias Armchair</h3>
+                        <svg
+                          class="shop-card__stars"
+                          width="102"
+                          height="18"
+                          fill="#F6B76F"
+                        >
+                          <use href="./image/icons.svg#icon-stars"></use>
+                        </svg>
+                        <div class="shop-card__price-box">
+                          <span class="shop-card__price-cards">392 &#36;</span>
+                          <a
+                            class="btn-add"
+                            style="height: 48px; width: 48px"
+                            href="https://frankof.com.ua/"
+                          >
+                            <svg width="18" height="18" fill="#FFFFFF">
+                              <use href="./image/icons.svg#icon-add-prod"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </li>
+                <li class="shop-section__item swiper-slide">
+                  <article class="shop-card">
+                    <img
+                      class="shop-card__image"
+                      loading="lazy"
+                      srcset="
+                        ./image/second-chair.webp    1x,
+                        ./image/second-chair@2x.webp 2x
+                      "
+                      src="./image/second-chair.webp"
+                      alt="Chair Baltsar"
+                    />
+                    <a href="https://frankof.com.ua/">
+                      <div class="shop-card__box">
+                        <p class="shop-card__text-cards">Chair</p>
+                        <h3 class="shop-card__title-cards">Baltsar Chair</h3>
+                        <svg
+                          class="shop-card__stars"
+                          width="102"
+                          height="18"
+                          fill="#F6B76F"
+                        >
+                          <use href="./image/icons.svg#icon-stars"></use>
+                        </svg>
+                        <div class="shop-card__price-box">
+                          <span class="shop-card__price-cards">299 &#36;</span>
+                          <a
+                            class="btn-add"
+                            style="height: 48px; width: 48px"
+                            href="https://frankof.com.ua/"
+                          >
+                            <svg width="18" height="18" fill="#FFFFFF">
+                              <use href="./image/icons.svg#icon-add-prod"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </li>
+                <li class="shop-section__item swiper-slide">
+                  <article class="shop-card">
+                    <img
+                      class="shop-card__image"
+                      loading="lazy"
+                      srcset="
+                        ./image/third-chair.webp    1x,
+                        ./image/third-chair@2x.webp 2x
+                      "
+                      src="./image/third-chair.webp"
+                      alt="Anjay Chair"
+                    />
+                    <a href="https://frankof.com.ua/">
+                      <div class="shop-card__box">
+                        <p class="shop-card__text-cards">Chair</p>
+                        <h3 class="shop-card__title-cards">Anjay Chair</h3>
+                        <svg
+                          class="shop-card__stars"
+                          width="102"
+                          height="18"
+                          fill="#F6B76F"
+                        >
+                          <use href="./image/icons.svg#icon-stars"></use>
+                        </svg>
+                        <div class="shop-card__price-box">
+                          <span class="shop-card__price-cards">519 &#36;</span>
+                          <a
+                            class="btn-add"
+                            style="height: 48px; width: 48px"
+                            href="https://frankof.com.ua/"
+                          >
+                            <svg width="18" height="18" fill="#FFFFFF">
+                              <use href="./image/icons.svg#icon-add-prod"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </li>
+                <li class="shop-section__item swiper-slide">
+                  <article class="shop-card">
+                    <img
+                      class="shop-card__image"
+                      loading="lazy"
+                      srcset="
+                        ./image/fourth-chair.webp    1x,
+                        ./image/fourth-chair@2x.webp 2x
+                      "
+                      src="./image/fourth-chair.webp"
+                      alt="Nyantuy Chair"
+                    />
+                    <a href="https://frankof.com.ua/">
+                      <div class="shop-card__box">
+                        <p class="shop-card__text-cards">Chair</p>
+                        <h3 class="shop-card__title-cards">Nyantuy Chair</h3>
+                        <svg
+                          class="shop-card__stars"
+                          width="102"
+                          height="18"
+                          fill="#F6B76F"
+                        >
+                          <use href="./image/icons.svg#icon-stars"></use>
+                        </svg>
+                        <div class="shop-card__price-box">
+                          <span class="shop-card__price-cards">921 &#36;</span>
+                          <a
+                            class="btn-add"
+                            style="height: 48px; width: 48px"
+                            href="https://frankof.com.ua/"
+                          >
+                            <svg width="18" height="18" fill="#FFFFFF">
+                              <use href="./image/icons.svg#icon-add-prod"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="pagination__button" type="button"></span>
+                <span class="pagination__button" type="button"></span>
+                <span class="pagination__button" type="button"></span>
+                <span class="pagination__button" type="button"></span>
+                <span class="pagination__button" type="button"></span>
+                <span class="pagination__button" type="button"></span>
+              </div>
+            </div>
+            <button
+              class="button-carousel button-shop-carousel next"
+              type="button"
+              aria-label="Наступний слайд"
+            >
+              <svg aria-hidden="true" class="button-carousel__icon" width="17.21" height="17.74">
+                <use href="./image/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
-      <section class="Section section-us" id="About-Us">
+      <section class="section provide-section" id="provide">
         <div class="container">
-          <div class="us-flexOne">
-            <img
-              class="img-shadowTwo"
-              src="./image/first-us.jpg"
+          <div class="provide-section__container">
+            <img width="628" height="444"
+              class="provide-section__img-shadow"
+              loading="lazy"
+              srcset="./image/first-us.webp 1x, ./image/first-us@2x.webp 2x"
+              src="./image/first-us.webp"
               alt="Диван на сірому фоні"
             />
-            <div class="us-firstFlex">
+            <div class="provide-section__box">
               <p class="orange-text">experiences</p>
-              <h2 class="title-one title-us">
+              <h2 class="section__title provide-section__title">
                 we provide you the best experience
               </h2>
-              <p>
+              <p class="provide-section__text">
                 You don’t have to worry about the result because all of these
                 interiors are made by people who are professionals in their
                 fields with an elegant and lucurious style and with premium
                 quality materials
               </p>
+              <a class="more-info" href="https://frankof.com.ua/"
+                >More Info
+                <svg width="38" height="12" fill="#E58411">
+                  <use href="./image/icons.svg#icon-Vector"></use>
+                </svg>
+              </a>
             </div>
           </div>
-          <div class="us-flexTwo">
-            <div class="display-block">
+        </div>
+      </section>
+
+      <section class="section serious-section" id="serious">
+        <div class="container">
+          <div class="serious-section__container">
+            <div class="serious-section__box-one">
               <p class="orange-text">Materials</p>
-              <h2 class="title-one">
-                Very serious<br />
-                materials for making<br />
-                furniture
+              <h2 class="section__title serious-section__title">
+                Very serious materials for making furniture
               </h2>
-              <p>
+              <p class="serious-section__box-text">
                 Because panto was very serious about designing furniture for our
                 environment, using a very expensive and famous capital but at a
                 relatively low price
               </p>
+              <a class="more-info" href="https://frankof.com.ua/"
+                >More Info
+                <svg width="38" height="12" fill="#E58411">
+                  <use href="./image/icons.svg#icon-Vector"></use>
+                </svg>
+              </a>
             </div>
-            <div class="us-Flexlittle">
+            <div class="serious-section__box-two">
               <img
-                class="img-shadowOne"
-                src="./image/second-us.jpg"
+                class="serious-section__shadow-one"
+                loading="lazy"
+                srcset="./image/second-us.webp 1x, ./image/second-us@2x.webp 2x"
+                src="./image/second-us.webp"
                 alt="Багато крісел у вітальні"
               />
+
               <img
-                class="img-shadowOne"
-                src="./image/third-us.jpg"
+                class="serious-section__shadow-one"
+                loading="lazy"
+                srcset="./image/third-us.webp 1x, ./image/third-us@2x.webp 2x"
+                src="./image/third-us.webp"
                 alt="Диван у вітальні"
               />
             </div>
+
             <img
-              class="img-shadowTwo"
-              src="./image/fourth-us.jpg"
+              class="serious-section__shadow-two"
+              loading="lazy"
+              srcset="./image/fourth-us.webp 1x, ./image/fourth-us@2x.webp 2x"
+              src="./image/fourth-us.webp"
               alt="Коричневі крісла за столом"
             />
           </div>
-          <p class="orange-text text-overTitle">Testimonials</p>
-          <h2 class="title-one clients-title">Our Client Reviews</h2>
-          <button class="button-carousel" type="button">
-            <svg class="icon-carousel" width="17.21" height="17.74">
-              <use href="./image/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
-          <ul class="us-flexThree">
-            <li>
-              <article class="clientsCard-one">
-                <div class="about-client">
-                  <img
-                    class="client-photo"
-                    src="./image/client-one.jpg"
-                    alt=""
-                  />
-                  <h3 class="clients-name">Bang Upin</h3>
-                  <p class="who-they">Pedagang Asongan</p>
-                  <p class="clients-text">
-                    &quot;Terimakasih banyak, kini ruanganku menjadi lebih mewah
-                    dan terlihat mahal&quot;
-                  </p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="clientsCard-two">
-                <div class="about-client">
-                  <img
-                    class="client-photo"
-                    src="./image/client-two.jpg"
-                    alt="client-photo"
-                  />
-                  <h3 class="clients-name">Ibuk Sukijan</h3>
-                  <p class="who-they">Ibu Rumah Tangga</p>
-                  <p class="clients-text">
-                    &quot;Makasih Panto, aku sekarang berasa tinggal di
-                    apartment karena barang-barang yang terlihat mewah&quot;
-                  </p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="clientsCard-three">
-                <div class="about-client">
-                  <img
-                    class="client-photo"
-                    src="./image/client-three.jpg"
-                    alt="client-photo"
-                  />
-                  <h3 class="clients-name">Mpok Ina</h3>
-                  <p class="who-they">Karyawan Swasta</p>
-                  <p class="clients-text">
-                    &quot;Sangat terjangkau untuk kantong saya yang tidak
-                    terlalu banyak&quot;
-                  </p>
-                </div>
-              </article>
-            </li>
-          </ul>
-          <button class="button-carousel" type="button">
-            <svg class="icon-carousel" width="17.21" height="17.74">
-              <use href="./image/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
+        </div>
+      </section>
+
+      <section class="section client-section">
+        <div class="container">
+          <p class="orange-text center">Testimonials</p>
+          <h2
+            class="section__title client-section__title section__title--centered"
+          >
+            Our Client Reviews
+          </h2>
+          <div class="client-section__slider">
+            <button
+              class="button-carousel button-client-carousel prev"
+              type="button"
+              aria-label="Попередній слайд"
+            >
+              <svg aria-hidden="true" class="button-carousel__icon" width="17.21" height="17.74">
+                <use href="./image/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="client-section__container swiper-client-container">
+              <ul class="client-section__list swiper-wrapper">
+                <li class="client-section__items swiper-slide">
+                  <article class="client-card">
+                    <a href="https://frankof.com.ua/">
+                      <img
+                        class="client-card__img"
+                        loading="lazy"
+                        srcset="
+                          ./image/bong-upin.webp    1x,
+                          ./image/bong-upin@2x.webp 2x
+                        "
+                        src="./image/bong-upin.webp"
+                        alt="client bong upin"
+                      />
+                    
+                    <div class="client-card__box">
+                      <img
+                        class="client-card__client-img"
+                        loading="lazy"
+                        src="./image/client-one.webp"
+                        alt="Bang Upin"
+                      />
+                      <h3 class="client-card__title">Bang Upin</h3>
+                      <p class="client-card__discript">Pedagang Asongan</p>
+                      <p class="client-card__text">
+                        &quot;Terimakasih banyak, kini ruanganku menjadi lebih
+                        mewah dan terlihat mahal&quot;
+                      </p>
+                      <svg
+                        class="client-card__stars"
+                        width="102"
+                        height="18"
+                        fill="#F6B76F"
+                      >
+                        <use href="./image/icons.svg#icon-stars"></use>
+                      </svg>
+                    </div>
+                    </a>
+                  </article>
+                </li>
+                <li class="client-section__items swiper-slide">
+                  <article class="client-card">
+                    <a href="https://frankof.com.ua/">
+                      <img
+                        class="client-card__img"
+                        loading="lazy"
+                        srcset="
+                          ./image/ilbuk-sukijan.webp    1x,
+                          ./image/ilbuk-sukijan@2x.webp 2x
+                        "
+                        src="./image/ilbuk-sukijan.webp"
+                        alt="client ilbuk sukijan"
+                      />
+                    
+                    <div class="client-card__box">
+                      <img
+                        class="client-card__client-img"
+                        loading="lazy"
+                        src="./image/client-two.webp"
+                        alt="client ilbuk sukijan"
+                      />
+                      <h3 class="client-card__title">Ibuk Sukijan</h3>
+                      <p class="client-card__discript">Ibu Rumah Tangga</p>
+                      <p class="client-card__text">
+                        “Makasih Panto, aku sekarang berasa tinggal di apartment
+                        karena barang-barang yang terlihat mewah“
+                      </p>
+                      <svg
+                        class="client-card__stars"
+                        width="102"
+                        height="18"
+                        fill="#F6B76F"
+                      >
+                        <use href="./image/icons.svg#icon-stars"></use>
+                      </svg>
+                    </div>
+                    </a>
+                  </article>
+                </li>
+                <li class="client-section__items swiper-slide">
+                  <article class="client-card">
+                    <a href="https://frankof.com.ua/">
+                      <img
+                        class="client-card__img"
+                        loading="lazy"
+                        srcset="
+                          ./image/mpok-ina.webp    1x,
+                          ./image/mpok-ina@2x.webp 2x
+                        "
+                        src="./image/mpok-ina.webp"
+                        alt="client mpok ina"
+                      />
+                   
+                    <div class="client-card__box">
+                      <img
+                        class="client-card__client-img"
+                        loading="lazy"
+                        src="./image/client-three.webp"
+                        alt="client ilbuk-sukijan"
+                      />
+                      <h3 class="client-card__title">Mpok Ina</h3>
+                      <p class="client-card__discript">Karyawan Swasta</p>
+                      <p class="client-card__text">
+                        “Sangat terjangkau untuk kantong saya yang tidak terlalu
+                        banyak“
+                      </p>
+                      <svg
+                        class="client-card__stars"
+                        width="102"
+                        height="18"
+                        fill="#F6B76F"
+                      >
+                        <use href="./image/icons.svg#icon-stars"></use>
+                      </svg>
+                    </div>
+                    </a>
+                  </article>
+                </li>
+                <li class="client-section__items swiper-slide">
+                  <article class="client-card">
+                    <a href="https://frankof.com.ua/">
+                      <img
+                        class="client-card__img"
+                        loading="lazy"
+                        srcset="
+                          ./image/bong-upin.webp    1x,
+                          ./image/bong-upin@2x.webp 2x
+                        "
+                        src="./image/bong-upin.webp"
+                        alt="client bong upin"
+                      />
+                    
+                    <div class="client-card__box">
+                      <img
+                        class="client-card__client-img"
+                        loading="lazy"
+                        src="./image/client-one.webp"
+                        alt="Bang Upin"
+                      />
+                      <h3 class="client-card__title">Bang Upin</h3>
+                      <p class="client-card__discript">Pedagang Asongan</p>
+                      <p class="client-card__text">
+                        &quot;Terimakasih banyak, kini ruanganku menjadi lebih
+                        mewah dan terlihat mahal&quot;
+                      </p>
+                      <svg
+                        class="client-card__stars"
+                        width="102"
+                        height="18"
+                        fill="#F6B76F"
+                      >
+                        <use href="./image/icons.svg#icon-stars"></use>
+                      </svg>
+                    </div>
+                    </a>
+                  </article>
+                </li>
+                <li class="client-section__items swiper-slide">
+                  <article class="client-card">
+                    <a href="https://frankof.com.ua/">
+                      <img
+                        class="client-card__img"
+                        loading="lazy"
+                        srcset="
+                          ./image/ilbuk-sukijan.webp    1x,
+                          ./image/ilbuk-sukijan@2x.webp 2x
+                        "
+                        src="./image/ilbuk-sukijan.webp"
+                        alt="client ilbuk sukijan"
+                      />
+                    
+                    <div class="client-card__box">
+                      <img
+                        class="client-card__client-img"
+                        loading="lazy"
+                        src="./image/client-two.webp"
+                        alt="client ilbuk sukijan"
+                      />
+                      <h3 class="client-card__title">Ibuk Sukijan</h3>
+                      <p class="client-card__discript">Ibu Rumah Tangga</p>
+                      <p class="client-card__text">
+                        “Makasih Panto, aku sekarang berasa tinggal di apartment
+                        karena barang-barang yang terlihat mewah“
+                      </p>
+                      <svg
+                        class="client-card__stars"
+                        width="102"
+                        height="18"
+                        fill="#F6B76F"
+                      >
+                        <use href="./image/icons.svg#icon-stars"></use>
+                      </svg>
+                    </div>
+                    </a>
+                  </article>
+                </li>
+                <li class="client-section__items swiper-slide">
+                  <article class="client-card">
+                    <a href="https://frankof.com.ua/">
+                      <img
+                        class="client-card__img"
+                        loading="lazy"
+                        srcset="
+                          ./image/mpok-ina.webp    1x,
+                          ./image/mpok-ina@2x.webp 2x
+                        "
+                        src="./image/mpok-ina.webp"
+                        alt="client mpok ina"
+                      />
+                    
+                    <div class="client-card__box">
+                      <img
+                        class="client-card__client-img"
+                        loading="lazy"
+                        src="./image/client-three.webp"
+                        alt="client ilbuk-sukijan"
+                      />
+                      <h3 class="client-card__title">Mpok Ina</h3>
+                      <p class="client-card__discript">Karyawan Swasta</p>
+                      <p class="client-card__text">
+                        “Sangat terjangkau untuk kantong saya yang tidak terlalu
+                        banyak“
+                      </p>
+                      <svg
+                        class="client-card__stars"
+                        width="102"
+                        height="18"
+                        fill="#F6B76F"
+                      >
+                        <use href="./image/icons.svg#icon-stars"></use>
+                      </svg>
+                    </div>
+                    </a>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="pagination__button" type="button"></span>
+                <span class="pagination__button" type="button"></span>
+                <span class="pagination__button" type="button"></span>
+                <span class="pagination__button" type="button"></span>
+                <span class="pagination__button" type="button"></span>
+                <span class="pagination__button" type="button"></span>
+              </div>
+            </div>
+            <button
+              class="button-carousel button-client-carousel next"
+              type="button"
+              aria-label="Наступний слайд"
+            >
+              <svg aria-hidden="true" class="button-carousel__icon" width="17.21" height="17.74">
+                <use href="./image/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
     </main>
-    <footer id="Contact">
+    <footer class="footer" id="contact">
       <div class="container">
-        <div class="footer-One">
-          <div class="first-box">
-            <nav>
-              <a class="color-logoFooter" href="./index.html">Panto</a>
-            </nav>
-            <p class="footer-text">
+        <div class="footer__container">
+          <div class="footer__logo-box">
+            <a class="footer__logo" href="./index.html">Panto</a>
+            <p class="footer__text">
               The advantage of hiring a workspace with us is that givees you
               comfortable service and all-around facilities.
             </p>
           </div>
-          <nav class="footer-nav">
-            <ul>
-              <li class="orange-footer">Services</li>
-              <li>
-                <a
-                  class="link-footer"
-                  href="https://frankof.com.ua/dilers/"
-                  target="_blank"
-                  >Email Marketing</a
-                >
-              </li>
-              <li>
-                <a
-                  class="link-footer"
-                  href="https://frankof.com.ua/dilers/"
-                  target="_blank"
-                  >Campaigns</a
-                >
-              </li>
-              <li>
-                <a
-                  class="link-footer"
-                  href="https://frankof.com.ua/dilers/"
-                  target="_blank"
-                  >Branding</a
-                >
-              </li>
-            </ul>
-            <ul>
-              <li class="orange-footer">Furniture</li>
-              <li>
-                <a
-                  class="link-footer"
-                  href="https://frankof.com.ua/cat-lizhka/"
-                  target="_blank"
-                  >Beds</a
-                >
-              </li>
-              <li>
-                <a
-                  class="link-footer"
-                  href="https://frankof.com.ua/cat-krisla/"
-                  target="_blank"
-                  >Chair</a
-                >
-              </li>
-              <li>
-                <a
-                  class="link-footer"
-                  href="https://frankof.com.ua/"
-                  target="_blank"
-                  >All</a
-                >
-              </li>
-            </ul>
+          <!-- <div class="footer__nav-container"> -->
+          <nav class="footer__nav">
+            <div>
+              <span class="footer__orange">Services</span>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://frankof.com.ua/dilers/"
+                    target="_blank"
+                    >Email Marketing</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://frankof.com.ua/dilers/"
+                    target="_blank"
+                    >Campaigns</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://frankof.com.ua/dilers/"
+                    target="_blank"
+                    >Branding</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <span class="footer__orange">Furniture</span>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://frankof.com.ua/cat-lizhka/"
+                    target="_blank"
+                    >Beds</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://frankof.com.ua/cat-krisla/"
+                    target="_blank"
+                    >Chair</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://frankof.com.ua/"
+                    target="_blank"
+                    >All</a
+                  >
+                </li>
+              </ul>
+            </div>
           </nav>
-          <address class="address">
-            <ul>
-              <li class="orange-footer">Follow Us</li>
-              <li>
+          <address class="footer__address">
+            <span class="footer__orange footer__orange--delete">Follow Us</span>
+            <ul class="footer__address-list">
+              <li class="footer__address-item">
                 <a
-                  class="address-icon"
+                  class="footer__address-icon"
                   href="https://www.facebook.com/frankof.official"
                   target="_blank"
                 >
-                  <svg width="19.56" height="19.84" fill="#1E2833">
-                    <use href="./image/icons.svg#icon-facebook"></use>
-                  </svg>
-                  <span class="icons-text">Facebook</span>
+                  <div class="footer__icon">
+                    <svg width="19.56" height="19.84">
+                      <use href="./image/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </div>
+                  <span class="footer__icons-text">Facebook</span>
                 </a>
               </li>
-              <li>
+              <li class="footer__address-item">
                 <a
-                  class="address-icon"
+                  class="footer__address-icon"
                   href="https://x.com/?lang=uk"
                   target="_blank"
                 >
-                  <svg width="19.56" height="15.89" fill="#1E2833">
-                    <use href="./image/icons.svg#icon-twitter"></use>
-                  </svg>
-                  <span class="icons-text">Twitter</span>
+                  <div class="footer__icon">
+                    <svg width="19.56" height="15.89">
+                      <use href="./image/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </div>
+                  <span class="footer__icons-text">Twitter</span>
                 </a>
               </li>
-              <li>
+              <li class="footer__address-item">
                 <a
-                  class="address-icon"
+                  class="footer__address-icon"
                   href="https://www.instagram.com/accounts/login/?next=%2Ffrankof_official%2F&source=omni_redirect"
                   target="_blank"
                 >
-                  <svg width="20" height="20" fill="#1E2833">
-                    <use href="./image/icons.svg#icon-instagram"></use>
-                  </svg>
-                  <span class="icons-text">Instagram</span>
+                  <div class="footer__icon">
+                    <svg width="20" height="20">
+                      <use href="./image/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </div>
+                  <span class="footer__icons-text">Instagram</span>
                 </a>
               </li>
             </ul>
           </address>
+          <!-- </div> -->
         </div>
-        <div class="Copyright">
-          <p class="link-footer">Copyright &copy; 2021</p>
-          <div class="copiright-one">
+        <div class="footer__copyright">
+          <p class="footer__copy">Copyright &copy; 2021</p>
+          <div class="footer__copiright-terms">
             <a
-              class="link-footer"
+              class="footer__copyright-link"
               href="https://frankof.com.ua/privacy-policy/"
               target="_blank"
               >Terms & Conditions</a
             >
             <a
-              class="link-footer"
+              class="footer__copyright-link"
               href="https://frankof.com.ua/privacy-policy/"
               target="_blank"
               >Privacy Policy</a
@@ -398,5 +1014,16 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js" defer></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+      defer
+    ></script>
+
+    <script src="./js/shop-slider.js" defer></script>
+    <script src="./js/client-slider.js" defer></script>
   </body>
 </html>
+
+

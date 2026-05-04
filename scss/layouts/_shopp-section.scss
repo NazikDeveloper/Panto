@@ -1,0 +1,40 @@
+.shop-section {
+  background-color: var(--color-six);
+  padding: 50px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 135px 0;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    // gap: 30px;
+    position: relative;
+  }
+
+  &__container {
+    overflow: hidden;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  &__list {
+    margin-bottom: 20px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__item {
+    border-radius: 20px;
+    padding-top: 50px;
+  }
+}

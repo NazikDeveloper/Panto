@@ -1,0 +1,26 @@
+.client-section {
+  &__slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__container {
+    overflow: hidden;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $bp-mobile) {
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+  }
+}
