@@ -25,7 +25,7 @@
         height: 30px;
         border-radius: 50%;
         border: none;
-        background-color: black;
+        background-color: var(--color-one);
         // background-color: transparent;
         transition-property: background-color, fill;
         transition-duration: 0.3s;
