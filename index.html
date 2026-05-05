@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyFirst WebSite</title>
 
+    <link
+      rel="preload"
+      as="image"
+      href="./image/hero-image.webp"
+      imagesrcset="./image/hero-image.webp 1x, ./image/hero-image@2x.webp 2x"
+      fetchpriority="high"
+    />
+
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 
     <link
@@ -33,13 +41,6 @@
       as="font"
       type="font/woff2"
       crossorigin
-    />
-
-    <link
-      rel="preload"
-      href="./image/hero-image.webp"
-      imagesrcset="./image/hero-image.webp 1x, ./image/hero-image@2x.webp 2x"
-      fetchpriority="high"
     />
 
     <link rel="stylesheet" href="./css/main.min.css" />
